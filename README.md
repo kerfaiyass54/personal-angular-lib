@@ -1,4 +1,4 @@
-# **personal-angular-lib** 🚀
+# **Personal Angular library** 🚀
 *A Modular Angular UI Library for Reusable Components*
 
 ![Angular](https://img.shields.io/badge/Angular-17.2.0-red.svg)
@@ -8,7 +8,7 @@
 ---
 
 ## **🚀 Overview**
-**personal-angular-lib** is a **modular Angular UI library** designed to help developers build **reusable, well-structured components** with ease. Whether you're working on a **single-page application (SPA)**, a **large-scale enterprise system**, or a **custom web solution**, this library provides **pre-built, production-ready components** that follow **Angular best practices**.
+**This project** consists of a modular Angular UI library designed to help developers build **reusable, well-structured components** with ease. Whether you're working on a **single-page application (SPA)**, a **large-scale enterprise system**, or a **custom web solution**, this library provides **pre-built, production-ready components** that follow **Angular best practices**.
 
 ### **Key Features**
 ✅ **Reusable Angular Components** – Build once, use anywhere
@@ -91,70 +91,6 @@ This generates the library in `dist/shared-ui`.
 cd dist/shared-ui
 npm publish
 ```
-
----
-
-### **Alternative: Use as a Local Dependency**
-If you want to **use the library locally** in another Angular project:
-```bash
-npm link
-```
-Then, in your **target project**, add:
-```bash
-npm link personal-angular-lib
-```
-
----
-
-## **🎯 Usage**
-
-### **1. Importing Components in Your Angular App**
-#### **Example: Using `SharedUiComponent`**
-```typescript
-// In your Angular module or component
-import { SharedUiComponent } from 'shared-ui';
-
-// In your template (HTML)
-<lib-shared-ui></lib-shared-ui>
-```
-
-#### **Example: Using a Custom Component (e.g., `ButtonComponent`)**
-```typescript
-// If you add a new component (e.g., Button)
-import { ButtonComponent } from 'shared-ui';
-
-// In your template
-<button lib-button type="primary">Click Me</button>
-```
-
----
-
-### **2. Customizing Styles**
-The library uses **CSS variables** for easy theming. Override them in your global styles:
-```css
-:root {
-  --pill-accent: #ff00ff; /* Change default accent color */
-  --gray-900: #121212; /* Custom dark theme */
-}
-```
-
----
-
-### **3. Adding New Components**
-To **extend the library**:
-```bash
-ng generate component button --project shared-ui
-```
-This creates a new component inside `projects/shared-ui/src/lib/`.
-
----
-
-## **🔧 Configuration**
-
-### **Customizing the Library**
-1. **Modify `ng-package.json`** to adjust build settings.
-2. **Update `public-api.ts`** to expose new components.
-3. **Extend `tsconfig.lib.json`** for advanced TypeScript options.
 
 ---
 
