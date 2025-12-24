@@ -1,9 +1,19 @@
 # **Personal Angular library** 🚀
 *A Modular Angular UI Library for Reusable Components*
 
-![Angular](https://img.shields.io/badge/Angular-17.2.0-red.svg)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.3.2-blue.svg)
-![MIT License](https://img.shields.io/badge/license-MIT-green.svg)
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="./icons/Angular-Dark.svg" width="48"> 
+    <img src="./icons/TypeScript.svg" width="48">
+    <img src="./icons/Bootstrap.svg" width="48">
+    <img src="./icons/Docker.svg" width="48">
+    <img src="./icons/CSS.svg" width="48">
+    <img src="./icons/HTML.svg" width="48">
+    <img src="./icons/Git.svg" width="48"> 
+    <img src="./icons/Linux-Dark.svg" width="48"> 
+    <img src="./icons/Windows-Dark.svg" width="48">
+  </a>
+</p>
 
 ---
 
