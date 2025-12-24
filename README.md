@@ -13,10 +13,15 @@
 
 ### **Key Features**
 ✅ **Reusable Angular Components** – Build once, use anywhere
+
 ✅ **Standalone Components** – No dependency on Angular modules
+
 ✅ **TypeScript Support** – Strong typing for better developer experience
+
 ✅ **Modular Architecture** – Easy to extend and customize
+
 ✅ **Optimized for Performance** – Minimal bundle size, efficient rendering
+
 ✅ **Well-Documented** – Clear examples and usage guides
 
 ### **Who Is This For?**
@@ -100,7 +105,7 @@ We welcome **contributions**! Here’s how you can help:
 
 ### **1. Development Setup**
 ```bash
-git clone https://github.com/your-username/personal-angular-lib.git
+git clone https://github.com/kerfaiyass54/personal-angular-lib.git
 cd personal-angular-lib
 npm install
 ```
