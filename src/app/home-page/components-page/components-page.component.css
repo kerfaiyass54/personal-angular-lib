@@ -1,0 +1,146 @@
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: white;
+  text-align: center;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.slider {
+  width: 100%;
+  height: var(--height);
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+.slider .list {
+  display: flex;
+  width: 100%;
+  min-width: calc(var(--width) * var(--quantity));
+  position: relative;
+}
+.slider .list .item {
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 100%;
+  animation: autoRun 10s linear infinite;
+  transition: filter 0.5s;
+  animation-delay: calc(
+    (10s / var(--quantity)) * (var(--position) - 1) - 10s
+  ) !important;
+}
+
+#slider2 .list .item {
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 100%;
+  animation: autoRun 5s linear infinite;
+  transition: filter 0.5s;
+  animation-delay: calc(
+    (10s / var(--quantity)) * (var(--position) - 1) - 10s
+  ) !important;
+}
+
+.slider .list .item img {
+  width: 100%;
+}
+@keyframes autoRun {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(var(--width) * -1);
+  }
+}
+
+@keyframes autoRunRight {
+  from {
+    right: 100%;
+  }
+  to {
+    right: calc(var(--width) * 1);
+  }
+}
+.slider:hover .item {
+  animation-play-state: paused !important;
+  filter: grayscale(1);
+}
+.slider .item:hover {
+  filter: grayscale(0);
+}
+.slider[reverse="true"] .item {
+  animation: reversePlay 10s linear infinite;
+}
+@keyframes reversePlay {
+  from {
+    left: calc(var(--width) * -1);
+  }
+  to {
+    left: 100%;
+  }
+}
+
+
+h1{
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 600;
+  background: none;
+  font-family: 'Poppins', sans-serif;
+  animation-duration: 0.5s;
+  animation-name: fadeIn;
+  animation-direction: normal;
+}
+
+h1::before {
+  margin-left: auto;
+}
+
+h1::after, h1::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  transition: 0.5s;
+}
+
+h1:hover::after, h1:hover::before {
+  width: 100%;
+}
+
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+    transform:translateY(30px)
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-top: 6px;
+  margin-bottom: 40px;
+  text-align: center;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
