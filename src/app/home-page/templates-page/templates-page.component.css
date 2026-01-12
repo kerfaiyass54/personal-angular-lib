@@ -1,0 +1,178 @@
+
+
+h1{
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 600;
+  background: none;
+  font-family: 'Poppins', sans-serif;
+  animation-duration: 0.5s;
+  animation-name: fadeIn;
+  animation-direction: normal;
+}
+
+h1::before {
+  margin-left: auto;
+}
+
+h1::after, h1::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  transition: 0.5s;
+}
+
+h1:hover::after, h1:hover::before {
+  width: 100%;
+}
+
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+    transform:translateY(30px)
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-top: 6px;
+  margin-bottom: 40px;
+  text-align: center;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+
+/* From Uiverse.io by dylanharriscameron */
+.card {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+;
+}
+
+.bg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 190px;
+  height: 240px;
+  z-index: 2;
+  background: rgba(255, 255, 255, .95);
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+}
+
+.blob {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 5s infinite ease;
+}
+
+/* 🎨 Individual colors */
+.card:nth-child(1) .blob {
+  background: #6c63ff; /* purple */
+}
+
+.card:nth-child(2) .blob {
+  background: #00c9a7; /* teal */
+}
+
+.card:nth-child(3) .blob {
+  background: #ffb703; /* amber */
+}
+
+.card:nth-child(4) .blob {
+  background: #ff6f91; /* pink */
+}
+
+.card:nth-child(5) .blob {
+  background: #4dabf7; /* blue */
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 30px 30px 80px #bdbdbd, -30px -30px 80px #ffffff;
+}
+
+
+.card-title {
+  position: relative;
+  z-index: 3;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+  pointer-events: none;
+}
+
+
+.card {
+  justify-content: flex-end;
+  padding-bottom: 24px;
+}
+
+
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
+
+.page-center {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  animation-name: fadeIn;
+  animation-duration: 0.6s;
+}
