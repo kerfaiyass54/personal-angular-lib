@@ -44,8 +44,8 @@
 ## **🛠️ Tech Stack**
 | Category | Tools & Libraries |
 |----------|------------------|
-| **Framework** | Angular .2.0 |
-| **Language** | TypeScript 5.3.2 |
+| **Framework** | Angular 21.2.0 |
+| **Language** | TypeScript 5.5 |
 | **Build Tool** | Angular CLI 21.2.2 |
 | **Testing** | Jasmine + Karma |
 | **Packaging** | `ng-packagr` for library distribution |
