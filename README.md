@@ -71,7 +71,7 @@
 ### **Quick Start**
 #### **1. Clone the Repository**
 ```bash
-git clone https://github.com/your-username/personal-angular-lib.git
+git clone https://github.com/kerfaiyass54/personal-angular-lib.git
 cd personal-angular-lib
 ```
 
