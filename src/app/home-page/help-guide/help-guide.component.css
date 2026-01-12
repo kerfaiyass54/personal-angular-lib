@@ -1,9 +1,4 @@
 .page-center {
-  min-height: 30vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
   animation-name: fadeIn;
   animation-duration: 0.6s;
 }

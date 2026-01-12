@@ -3,82 +3,85 @@
   <p class="subtitle text-center">
     Check here
   </p>
-  <div class="stepper-wrapper">
+  <div class="page-center">
+    <div class="stepper-wrapper">
 
-    <!-- Header -->
-    <div class="stepper-header">
-      <div class="progress-line">
+      <!-- Header -->
+      <div class="stepper-header">
+        <div class="progress-line">
+          <div
+            class="progress-line-fill"
+            [style.width.%]="(currentStep - 1) * 50"
+          ></div>
+        </div>
+
         <div
-          class="progress-line-fill"
-          [style.width.%]="(currentStep - 1) * 50"
-        ></div>
-      </div>
-
-      <div
-        class="step"
-        [class.active]="currentStep >= 1"
-        (click)="setStep(1)"
-      >
-        <div class="step-number">1</div>
-        <div class="step-title">Angular v21</div>
-      </div>
-
-      <div
-        class="step"
-        [class.active]="currentStep >= 2"
-        (click)="setStep(2)"
-      >
-        <div class="step-number">2</div>
-        <div class="step-title">Project Summary</div>
-      </div>
-
-      <div
-        class="step"
-        [class.active]="currentStep >= 3"
-        (click)="setStep(3)"
-      >
-        <div class="step-number">3</div>
-        <div class="step-title">Contribute</div>
-      </div>
-    </div>
-
-    <!-- Content -->
-    <div class="stepper-content">
-
-      <div class="step-content" [class.show]="currentStep === 1">
-        <h3>Angular v21</h3>
-        <p>
-          Built using Angular v21 with standalone components, modern
-          control flow, and optimized performance.
-        </p>
-      </div>
-
-      <div class="step-content" [class.show]="currentStep === 2">
-        <h3>Project Summary</h3>
-        <p>
-          A reusable UI template project designed to speed up development
-          and keep design consistency across applications.
-        </p>
-      </div>
-
-      <div class="step-content" [class.show]="currentStep === 3">
-        <h3>Contribute</h3>
-        <p>
-          Join the project on GitHub and help improve it by opening issues
-          or submitting pull requests.
-        </p>
-        <a
-          href="https://github.com/your-repo"
-          target="_blank"
-          class="github-link"
+          class="step"
+          [class.active]="currentStep >= 1"
+          (click)="setStep(1)"
         >
-          GitHub Repository →
-        </a>
+          <div class="step-number">1</div>
+          <div class="step-title">Angular v21</div>
+        </div>
+
+        <div
+          class="step"
+          [class.active]="currentStep >= 2"
+          (click)="setStep(2)"
+        >
+          <div class="step-number">2</div>
+          <div class="step-title">Project Summary</div>
+        </div>
+
+        <div
+          class="step"
+          [class.active]="currentStep >= 3"
+          (click)="setStep(3)"
+        >
+          <div class="step-number">3</div>
+          <div class="step-title">Contribute</div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="stepper-content">
+
+        <div class="step-content" [class.show]="currentStep === 1">
+          <h3>Angular v21</h3>
+          <p>
+            Built using Angular v21 with standalone components, modern
+            control flow, and optimized performance.
+          </p>
+        </div>
+
+        <div class="step-content" [class.show]="currentStep === 2">
+          <h3>Project Summary</h3>
+          <p>
+            A reusable UI template project designed to speed up development
+            and keep design consistency across applications.
+          </p>
+        </div>
+
+        <div class="step-content" [class.show]="currentStep === 3">
+          <h3>Contribute</h3>
+          <p>
+            Join the project on GitHub and help improve it by opening issues
+            or submitting pull requests.
+          </p>
+          <a
+            href="https://github.com/kerfaiyass54/personal-angular-lib"
+            target="_blank"
+            class="github-link"
+          >
+            GitHub Repository →
+          </a>
+        </div>
+
       </div>
 
     </div>
-
   </div>
+
 
 
 </div>
