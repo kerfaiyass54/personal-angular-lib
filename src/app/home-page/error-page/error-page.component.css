@@ -1,67 +1,165 @@
+/* ===============================
+   GLOBAL
+================================ */
+* {
+  box-sizing: border-box;
+}
+
+:host {
+  margin: 0;
+}
+
+/* ===============================
+   WRAPPER
+================================ */
 .error-wrapper {
-  min-height: calc(100vh - 80px);
+  min-height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f7f8fc;
+  background: radial-gradient(circle at top, #ffffff, #ffffff);
   font-family: 'Poppins', sans-serif;
+  padding: 24px;
 }
 
+/* ===============================
+   CARD
+================================ */
 .error-card {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
   padding: 48px 56px;
-  border-radius: 20px;
+  border-radius: 24px;
   text-align: center;
   max-width: 520px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  color: #0c0c42;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.35);
+  animation: card-fade-in 0.8s ease;
 }
 
-/* 404 */
-.error-code {
-  font-size: 72px;
-  font-weight: 700;
-  color: #6c63ff;
-  margin-bottom: 16px;
+@keyframes card-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
-/* Dino scene */
-.dino-scene {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 70px;
-  margin: 30px 0;
-  border-bottom: 3px solid #e6e6e6;
+/* ===============================
+   ILLUSTRATION
+================================ */
+.error-illustration {
   position: relative;
-  overflow: hidden;
+  height: 160px;
+  margin-bottom: 24px;
 }
 
-/* Text */
+/* planet */
+.planet {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(135deg, #6c63ff, #8f8aff);
+  border-radius: 50%;
+  box-shadow: inset -10px -10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* astronaut */
+.astronaut {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 48px;
+  background: white;
+  border-radius: 50%;
+  animation: float 3s ease-in-out infinite;
+}
+
+.astronaut::before {
+  content: "";
+  position: absolute;
+  bottom: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 22px;
+  height: 28px;
+  background: white;
+  border-radius: 10px;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, -12px);
+  }
+}
+
+/* ===============================
+   TEXT
+================================ */
+.error-code {
+  font-size: 88px;
+  font-weight: 800;
+  margin: 0;
+  background: linear-gradient(135deg, #6c63ff, #a39dff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .title {
   font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 12px;
+  margin: 12px 0;
 }
 
 .description {
   font-size: 16px;
-  color: #666;
+  opacity: 0.8;
   margin-bottom: 32px;
 }
 
-/* Button */
+/* ===============================
+   BUTTON
+================================ */
 .home-button {
   display: inline-block;
-  padding: 12px 28px;
-  border-radius: 12px;
+  padding: 14px 32px;
+  border-radius: 14px;
   background: linear-gradient(135deg, #6c63ff, #8a84ff);
   color: white;
   text-decoration: none;
-  font-weight: 500;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-weight: 600;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .home-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(108, 99, 255, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(108, 99, 255, 0.5);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 480px) {
+  .error-card {
+    padding: 36px 28px;
+  }
+
+  .error-code {
+    font-size: 64px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
 }
