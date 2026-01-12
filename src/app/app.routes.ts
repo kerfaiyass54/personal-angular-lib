@@ -4,6 +4,7 @@ import {ComponentsPageComponent} from "./home-page/components-page/components-pa
 import {TemplatesPageComponent} from "./home-page/templates-page/templates-page.component";
 import {HelpGuideComponent} from "./home-page/help-guide/help-guide.component";
 import {WelcomePageComponent} from "./home-page/welcome-page/welcome-page.component";
+import {ErrorPageComponent} from "./home-page/error-page/error-page.component";
 
 export const routes: Routes = [
   {
@@ -31,6 +32,11 @@ export const routes: Routes = [
         path: 'help',
         component: HelpGuideComponent,
         title: 'Help guide'
+      },
+      {
+        path: '**',
+        component: ErrorPageComponent,
+        title: 'Error 404'
       }
     ]
   }
