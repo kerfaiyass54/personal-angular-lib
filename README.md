@@ -2,10 +2,6 @@
 *A Modular Angular UI Library for Reusable Components*
 
 
-![Angular](https://img.shields.io/badge/Angular-17.2.0-red.svg)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.3.2-blue.svg)
-![MIT License](https://img.shields.io/badge/license-MIT-green.svg)
-
 ---
 
 ## **🚀 Overview**
@@ -48,9 +44,9 @@
 ## **🛠️ Tech Stack**
 | Category | Tools & Libraries |
 |----------|------------------|
-| **Framework** | Angular 17.2.0 |
-| **Language** | TypeScript 5.3.2 |
-| **Build Tool** | Angular CLI 17.2.2 |
+| **Framework** | Angular 21.2.0 |
+| **Language** | TypeScript 5.5 |
+| **Build Tool** | Angular CLI 21.2.2 |
 | **Testing** | Jasmine + Karma |
 | **Packaging** | `ng-packagr` for library distribution |
 | **Styling** | CSS Variables, SCSS (optional) |
@@ -58,7 +54,7 @@
 ### **System Requirements**
 - **Node.js** (v18.13.0 or higher)
 - **npm** / **yarn** / **pnpm** (v7.0.0+ recommended)
-- **Angular CLI** (v17.2.0+)
+- **Angular CLI** (v21.2.0+)
 
 ---
 
@@ -67,7 +63,7 @@
 ### **Prerequisites**
 1. **Install Node.js** (v18.13.0+)
    🔗 [Download Node.js](https://nodejs.org/)
-2. **Install Angular CLI** (v17.2.0+)
+2. **Install Angular CLI** (v21.2.0+)
    ```bash
    npm install -g @angular/cli@latest
    ```
@@ -75,7 +71,7 @@
 ### **Quick Start**
 #### **1. Clone the Repository**
 ```bash
-git clone https://github.com/your-username/personal-angular-lib.git
+git clone https://github.com/kerfaiyass54/personal-angular-lib.git
 cd personal-angular-lib
 ```
 
