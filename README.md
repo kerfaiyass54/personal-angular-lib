@@ -1,6 +1,7 @@
 # **Personal Angular library** 🚀
 *A Modular Angular UI Library for Reusable Components*
 
+[![My Skills](https://skillicons.dev/icons?i=py,docker,angular,bootstrap,css,git,github,html,idea,npm,ts,vscode)](https://skillicons.dev)
 
 ---
 
@@ -126,35 +127,7 @@ ng build shared-ui --configuration production
 2. **Test your changes** → **Write tests** (if applicable)
 3. **Submit a PR** with a **detailed description**
 
----
 
-
-## **🐛 Issues & Support**
-### **Reporting Bugs**
-Found a bug? Open an **issue** with:
-✅ **Steps to reproduce**
-✅ **Expected vs. actual behavior**
-✅ **Screenshots/logs (if applicable)**
-
-
-### **FAQ**
-| Question | Answer |
-|----------|--------|
-| **How do I update the library?** | Run `npm update personal-angular-lib` |
-| **Can I use this in a commercial project?** | Yes! MIT License allows it. |
-| **How do I add a new component?** | Use `ng generate component --project shared-ui` |
-
----
-
-## **🗺️ Roadmap**
-| Feature | Status | Description |
-|---------|--------|-------------|
-| **Dark Mode Support** | ⚠️ Planned | Add dark/light theme toggling |
-| **Internationalization (i18n)** | 🚧 In Progress | Multi-language support |
-| **More Components** | 🎨 Next | Buttons, modals, forms, etc. |
-| **Storybook Integration** | 📖 Planned | Interactive component demos |
-
----
 
 ## **💡 Final Notes**
 🔥 **Star this repo** if you found it useful!
